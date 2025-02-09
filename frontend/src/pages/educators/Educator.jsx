@@ -1,7 +1,13 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
 
 const Educator = () => {
-  return <div>Educator</div>;
+  return (
+    <div>
+      <h1>Educator</h1>
+      <div className="">{<Outlet />}</div>
+    </div>
+  );
 };
 
 export default Educator;
